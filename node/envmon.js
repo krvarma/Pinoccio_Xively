@@ -5,10 +5,10 @@ var xively = require("xively");
 var xivelyclient = new xively();
 
 // create an api instance with default options
-var api = pinoccio("6fbeeaaf0a29d6151cd2e50a5ebea920");// in the browser the token may be read from a pinoccio_id cookie,
+var api = pinoccio("<<pinoccio_key>>");// in the browser the token may be read from a pinoccio_id cookie,
 var stream = api.sync();
 
-xivelyclient.setKey("tlOT247P0916r5GcY5XY1fGn01nzIO1nynydQkxNFM9xhhzX");
+xivelyclient.setKey("<<xively_api_key>>");
 
 stream.on("data", function(data){
 	var streamData = data.data;
@@ -35,7 +35,7 @@ stream.on("data", function(data){
 			}
 			
 			// Send data to Xively
-			xivelyclient.feed.new('469506356', {
+			xivelyclient.feed.new('<<feed_id>>', {
 				data_point: dp,
 				callback: function(e) { 
 					console.log("Data posted to Xively");
