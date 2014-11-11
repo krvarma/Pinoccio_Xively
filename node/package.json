@@ -1,0 +1,20 @@
+{
+  "name": "pinoccio_xively",
+  "version": "0.0.1",
+  "description": "Pinoccio and Xively integration",
+  "main": "envmon.js",
+  "dependencies": {
+    "pinoccio": "^0.1.25",
+    "xively": "^0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pinoccio",
+    "xively"
+  ],
+  "author": "\"Krishnaraj Varma\" <krvarma@gmail.com>",
+  "license": "ISC"
+}
